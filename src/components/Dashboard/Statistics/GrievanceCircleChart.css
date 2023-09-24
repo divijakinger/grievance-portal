@@ -1,0 +1,62 @@
+.grievance-circle-chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px; /* Set an appropriate height */
+    margin: 20px auto;
+    max-width: 80%;
+  }
+  
+  .grievance-circle {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px;
+    position: relative; /* Position for tooltip */
+  }
+  
+  .grievance-circle svg {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .grievance-circle circle {
+    transform: rotate(-90deg);
+    transform-origin: center;
+    transition: stroke-dasharray 0.5s ease-in-out; /* Smooth animation */
+  }
+  
+  .grievance-circle:hover circle {
+    stroke-dasharray: 100 100; /* Full border on hover */
+  }
+  
+  .grievance-circle span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Bring text above the border */
+  }
+  
+  /* Define colors for each state */
+  .grievance-circle:nth-child(1) circle {
+    stroke: #34B53A;
+  }
+  
+  .grievance-circle:nth-child(2) circle {
+    stroke: #4238F2;
+  }
+  
+  .grievance-circle:nth-child(3) circle {
+    stroke: #FE3B29;
+  }
+  
+  .grievance-circle:nth-child(4) circle {
+    stroke: #FF3375;
+  }
+  
+  .grievance-circle:nth-child(5) circle {
+    stroke: #05A0FC
+  }
+  

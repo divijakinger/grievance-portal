@@ -5,7 +5,6 @@ import Chart from "chart.js/auto";
 
 Chart.register(CategoryScale);
 
-
 const BarChart = () => {
   const langNames = {
     1: 'English',
@@ -17,10 +16,10 @@ const BarChart = () => {
     7: 'Bengali',
   }
 
-  const langData = [4,5,6,7,8,9,10]
-  const languagesData = [4,5,6,7,8,9,10]
+  const langData = [1, 2, 3, 4, 5, 6, 7]; // Use language IDs
+  const languagesData = [4, 5, 6, 7, 8, 9, 10]
   const chartData = {
-    labels: langData,
+    labels: langData.map(id => langNames[id]), // Map language IDs to names
     datasets: [
       {
         label: 'Language',
