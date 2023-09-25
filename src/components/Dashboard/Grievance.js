@@ -37,13 +37,14 @@ function Grievance() {
             <Card style={{
               height: 300,
             }}>
-              <CardContent>
+              <CardContent style={{paddingRight:'10px',paddingLeft:'10px',paddingTop:'40px'}}>
                 <Typography variant="h5" sx={{
                   paddingLeft: 15,
                   paddingRight: 15,
                   fontWeight: 'bold',
                   display: 'flex ',
                   justifyContent: 'center',
+                  color:'#498b30',
                 }}>
                   Enter Grievance Number
                 </Typography>
@@ -94,7 +95,7 @@ function Grievance() {
           <Card style={{
             height: '300px',
           }}>
-            <CardContent>
+            <CardContent style={{paddingRight:'10px',paddingLeft:'10px',paddingTop:'40px'}}>
               {/* <div style ={{ fontWeight: 'bold',
                 display:'flex ',
                 justifyContent:'center',
@@ -102,9 +103,11 @@ function Grievance() {
                 <GTranslateIcon fontSize='large'/>
               </div> */}
               <Typography variant="h5" sx={{
+                paddingTop:'20px',
                 fontWeight: 'bold',
                 display: 'flex ',
                 justifyContent: 'center',
+                color:"#498b30",
               }}>
                 Find by Status
               </Typography>
